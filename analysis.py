@@ -14,3 +14,9 @@ print(df.describe())
 wins_by_team = pd.concat([df['Home Team'][df['Home Win']], df['Away Team'][~df['Home Win']]]).value_counts()
 print("\nNumber of wins for each team:")
 print(wins_by_team)
+
+# Average scores for home and away teams
+home_scores_avg = df['Home Score'].mean()
+away_scores_avg = df['Away Score'].mean()
+print(f"\nAverage home scores: {home_scores_avg:.2f}")
+print(f"Average away scores: {away_scores_avg:.2f}")
