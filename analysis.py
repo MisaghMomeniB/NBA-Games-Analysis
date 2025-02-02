@@ -20,3 +20,6 @@ home_scores_avg = df['Home Score'].mean()
 away_scores_avg = df['Away Score'].mean()
 print(f"\nAverage home scores: {home_scores_avg:.2f}")
 print(f"Average away scores: {away_scores_avg:.2f}")
+
+# 4. Data visualization
+plt.figure(figsize=(12, 6))
