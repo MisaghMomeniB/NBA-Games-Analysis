@@ -4,7 +4,7 @@ import seaborn as sns
 
 df = pd.read_csv('data.csv')
 
-df['Date'] = pd.datetime(df['Date'])
+df['Date'] = pd.to_datetime(df['Date'])
 df['Home Win'] = df['Winner'] == df['Home Team']
 
 print("All : ")
