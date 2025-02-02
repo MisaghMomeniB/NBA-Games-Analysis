@@ -23,3 +23,12 @@ print(f"Average away scores: {away_scores_avg:.2f}")
 
 # 4. Data visualization
 plt.figure(figsize=(12, 6))
+
+# Bar chart showing the number of wins for each team
+sns.barplot(x=wins_by_team.index, y=wins_by_team.values, palette="viridis")
+plt.title("Number of Wins for Each Team")
+plt.xlabel("Team Name")
+plt.ylabel("Number of Wins")
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
