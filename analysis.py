@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt  # For creating visualizations
 import seaborn as sns  # For advanced and aesthetically pleasing visualizations
 
 # Load the data into a Pandas DataFrame
-df = pd.read_csv(pd.read_csv('data.csv'))  # Convert the string data into a DataFrame
+df = pd.read_csv('data.csv')  # Convert the string data into a DataFrame
 
 # Convert the 'Date' column to datetime format for easier date-based analysis
 df['Date'] = pd.to_datetime(df['Date'])
