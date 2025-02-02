@@ -9,3 +9,8 @@ df['Home Win'] = df['Winner'] == df['Home Team']
 
 print("All : ")
 print(df.describe())
+
+# Number of wins for each team
+wins_by_team = pd.concat([df['Home Team'][df['Home Win']], df['Away Team'][~df['Home Win']]]).value_counts()
+print("\nNumber of wins for each team:")
+print(wins_by_team)
