@@ -32,3 +32,13 @@ plt.ylabel("Number of Wins")
 plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
+
+# Bar chart comparing average home and away scores
+scores = pd.DataFrame({
+    'Type': ['Home', 'Away'],
+    'Average Score': [home_scores_avg, away_scores_avg]
+})
+sns.barplot(x='Type', y='Average Score', data=scores, palette="coolwarm")
+plt.title("Comparison of Average Home and Away Scores")
+plt.ylabel("Average Score")
+plt.show()
